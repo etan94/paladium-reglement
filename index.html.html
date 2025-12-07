@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Résumé - Règlement Paladium (Version Premium)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --pala-bg:#1f0f00;
+      --pala-bg2:#140a00;
+      --pala-purple:#ff7a00;
+      --pala-cyan:#ffb347;
+      --pala-gold:#ffd463;
+      --glass:rgba(255,255,255,0.05);
+      --muted:rgba(225,225,255,0.7);
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Montserrat;background:radial-gradient(circle at top,var(--pala-purple) 0%,var(--pala-bg) 40%,var(--pala-bg2) 100%);color:white;min-height:100vh;padding:30px}
+
+    .wrapper{max-width:1000px;margin:auto;background:var(--glass);backdrop-filter:blur(16px);padding:32px;border-radius:20px;border:1px solid rgba(255,255,255,0.08);box-shadow:0 10px 40px rgba(0,0,0,0.6)}
+
+    /* Header améliorié */
+    .hero{display:flex;gap:22px;align-items:center;margin-bottom:26px}
+    .hero-logo{width:90px;height:90px;border-radius:20px;background:linear-gradient(140deg,var(--pala-purple),var(--pala-cyan));display:flex;align-items:center;justify-content:center;font-size:26px;font-weight:700;box-shadow:0 10px 25px rgba(0,0,0,0.4)}
+    .hero-title h1{font-size:30px;margin-bottom:6px}
+    .hero-title p{color:var(--muted)}
+
+    /* Cards premium */
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(290px,1fr));gap:20px;margin-top:22px}
+    .card{background:rgba(255,255,255,0.03);padding:20px;border-radius:14px;border:1px solid rgba(255,255,255,0.06);transition:.2s;box-shadow:inset 0 0 20px rgba(0,0,0,0.35)}
+    .card:hover{transform:translateY(-4px);border-color:var(--pala-purple)}
+    .card h3{color:var(--pala-gold);font-size:18px;margin-bottom:10px;text-shadow:0 0 6px rgba(0,0,0,0.4)}
+    .card ul{margin-left:20px;color:var(--muted);line-height:1.55;font-size:14px}
+
+    /* Badge stylisé */
+    .tag{display:inline-block;padding:8px 16px;font-size:14px;border-radius:999px;background:linear-gradient(90deg,var(--pala-purple),var(--pala-cyan));font-weight:600;margin-top:4px}
+
+    footer{margin-top:28px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;color:var(--muted)}
+    .credit{color:var(--pala-gold);font-weight:700}
+
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+
+    <section class="hero">
+      <div class="hero-logo">Pala</div>
+      <div class="hero-title">
+        <h1>Résumé Premium — Règlement Paladium</h1>
+        
+      </div>
+    </section>
+
+    
+
+    <div class="grid">
+      <div class="card">
+        <h3>I. Respect & Chat</h3>
+        <ul>
+          <li>Respect total entre joueurs.</li>
+          <li>Pas de spam, flood, insultes ni propos discriminatoires.</li>
+          <li>Pub, arnaques et partage d'informations privées interdits.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>II. Triche & Logiciels</h3>
+        <ul>
+          <li>Interdiction absolue : hacks, macros, scripts auto, x‑ray, etc.</li>
+          <li>VPN/proxy pour contourner = sanction.</li>
+          <li>Mods autorisés uniquement s'ils sont annoncés par Paladium.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>III. Exploits / Vols / Dupes</h3>
+        <ul>
+          <li>Vol interdit sauf zones autorisées.</li>
+          <li>Aucune utilisation de glitch/duplication tolérée.</li>
+          <li>Tout bug doit être report et non exploité.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>IV. PvP / Factions</h3>
+        <ul>
+          <li>Pas de bases impillables.</li>
+          <li>Skins et pseudos offensants bannis.</li>
+          <li>Certains farms interdits en zones spéciales.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>V. Serveur & Performances</h3>
+        <ul>
+          <li>Machines à lag interdites.</li>
+          <li>Redstone excessive surveillée.</li>
+          <li>Remboursements possibles si preuves valables.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3>VI. Sanctions</h3>
+        <ul>
+          <li>Participer = responsable.</li>
+          <li>Infractions graves → bannissement définitif.</li>
+          <li>Contournement = sanction doublée.</li>
+        </ul>
+      </div>
+    </div>
+
+    <footer>
+      <div>Règlement complet disponible ici : <a href="https://wiki.paladium-pvp.fr/fr/article/be-reglement-en-jeu-7816nt/#3-article-22-changement-de-leadership-faction" style="color:var(--pala-cyan);text-decoration:none;" target="_blank">Règlement officiel Paladium</a></div>
+      <div class="credit">Fait par Etan Gerardot</div>
+    </footer>
+
+  </div>
+</body>
+</html>
